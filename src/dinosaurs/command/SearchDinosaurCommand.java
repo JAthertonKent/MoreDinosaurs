@@ -4,6 +4,7 @@ import dinosaurs.io.Console;
 import dinosaurs.dal.DinosaurRepository;
 import dinosaurs.model.Dinosaur;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import org.apache.commons.lang.StringUtils;
 
 import java.util.List;
@@ -14,11 +15,8 @@ public class SearchDinosaurCommand implements Command {
     private final Console console;
     private DinosaurRepository dinosaurRepository;
 
-    @Override
-
-    public String getName() {
-        return "Search Dinosaur";
-    }
+    @Getter
+    private final String name = "Search Dinosaur";
 
     @Override
     public void execute() {
