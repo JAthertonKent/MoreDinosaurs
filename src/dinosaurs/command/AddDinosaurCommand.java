@@ -1,13 +1,25 @@
 package dinosaurs.command;
 
-import lombok.Getter;
+import dinosaurs.dal.DinosaurRepository;
+import dinosaurs.factory.DinosaurFactory;
+import dinosaurs.io.Console;
+import dinosaurs.model.Dinosaur;
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor
 public class AddDinosaurCommand implements Command {
-    @Getter
-    private final String name = "Add Dinosaur";
+
+    private final Console console;
+    private final DinosaurRepository dinoRepo;
+
+    @Override
+    public String getName() {
+        return "Add Dinosaur";
+    }
 
     @Override
     public void execute() {
-
+        String input = console.prompt("Enter the name of your dinosaur:");
+        dinoRepo.addDinosaur(DinosaurFactory.create(input));
     }
 }

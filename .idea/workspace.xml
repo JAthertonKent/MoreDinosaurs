@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43521526-cf0e-4c16-a95c-237672ad5817" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dinosaurs/command/AddDinosaurCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dinosaurs/command/AddDinosaurCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dinosaurs/command/ListDinosaursCommand.java" afterPath="$PROJECT_DIR$/src/dinosaurs/command/ListDinosaursCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dinosaurs/command/SearchDinosaurCommand.java" afterPath="$PROJECT_DIR$/src/dinosaurs/command/SearchDinosaurCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dinosaurs/factory/DinosaurFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dinosaurs/factory/DinosaurFactoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dinosaurs/dal/InMemoryDinosaurRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dinosaurs/dal/InMemoryDinosaurRepositoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dinosaurs/command/RemoveDinosaurCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dinosaurs/command/RemoveDinosaurCommandTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_guava_guava_15_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dinosaurs/command/AddDinosaurCommand.java" afterPath="$PROJECT_DIR$/src/dinosaurs/command/AddDinosaurCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/dinosaurs/command/AddDinosaurCommandTest.java" afterPath="$PROJECT_DIR$/test/dinosaurs/command/AddDinosaurCommandTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dinosaur.iml" afterPath="$PROJECT_DIR$/Dinosaur.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dinosaurs/model/Dinosaur.java" afterPath="$PROJECT_DIR$/src/dinosaurs/model/Dinosaur.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dinosaurs/dal/DinosaurRepository.java" afterPath="$PROJECT_DIR$/src/dinosaurs/dal/DinosaurRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/dinosaurs/command/SearchDinosaurCommandTest.java" afterPath="$PROJECT_DIR$/test/dinosaurs/command/SearchDinosaurCommandTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
@@ -14,20 +23,27 @@
     <file path="/Console.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391484388768" ignored="false" />
     <file path="/Menu.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391385853551" ignored="false" />
     <file path="/a.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391361360624" ignored="false" />
-    <file path="/fragment.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391498202025" ignored="false" />
+    <file path="/fragment.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391577673407" ignored="false" />
     <file path="/OptionCommands.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391387485138" ignored="false" />
     <file path="/ListDinosaurs.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391388241355" ignored="false" />
     <file path="/ListDinosaursTest.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391398322558" ignored="false" />
-    <file path="/DinosaurRepository.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391493130385" ignored="false" />
+    <file path="/DinosaurRepository.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391577537367" ignored="false" />
     <file path="/ListDinosaursCommandTest.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391491095122" ignored="false" />
     <file path="/ListDinosaursCommand.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391491199594" ignored="false" />
-    <file path="/SearchDinosaurCommand.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391496223981" ignored="false" />
-    <file path="/SearchDinosaurCommandTest.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391494422087" ignored="false" />
+    <file path="/SearchDinosaurCommand.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391570181240" ignored="false" />
+    <file path="/SearchDinosaurCommandTest.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391499765430" ignored="false" />
     <file path="/ConsoleTest.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391484194490" ignored="false" />
     <file path="/Dummy.txt" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391497186242" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391497195654" ignored="false" />
-    <file path="/AddDinosaurCommandTest.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391498404421" ignored="false" />
-    <file path="/AddDinosaurCommand.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391498369891" ignored="false" />
+    <file path="/AddDinosaurCommandTest.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391574161488" ignored="false" />
+    <file path="/AddDinosaurCommand.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391574280346" ignored="false" />
+    <file path="/Dinosaur.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391574533638" ignored="false" />
+    <file path="/RemoveDinosaurCommandTest.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391569795966" ignored="false" />
+    <file path="/RemoveDinosaurCommand.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391570357506" ignored="false" />
+    <file path="/DinosaurFactory.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391574647872" ignored="false" />
+    <file path="/DinosaurFactoryTest.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391574479694" ignored="false" />
+    <file path="/InMemoryDinosaurRepository.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391580284325" ignored="false" />
+    <file path="/InMemoryDinosaurRepositoryTest.java" changelist="43521526-cf0e-4c16-a95c-237672ad5817" time="1391580164544" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,48 +104,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MenuTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/dinosaurs/MenuTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListDinosaursCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/ListDinosaursCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="4" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchDinosaurCommand.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SearchDinosaurCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/SearchDinosaurCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="39" selection-start="471" selection-end="471" vertical-scroll-proportion="0.30097088">
+            <state line="16" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchDinosaurCommandTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/dinosaurs/command/SearchDinosaurCommandTest.java">
+      <file leaf-file-name="RemoveDinosaurCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/RemoveDinosaurCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="95" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddDinosaurCommandTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/dinosaurs/command/AddDinosaurCommandTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
+            <state line="19" column="53" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,16 +127,7 @@
       <file leaf-file-name="AddDinosaurCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/AddDinosaurCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="11" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListDinosaursCommandTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/dinosaurs/command/ListDinosaursCommandTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="62" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0">
+            <state line="22" column="29" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,7 +138,7 @@
       <file leaf-file-name="Dinosaur.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dinosaurs/model/Dinosaur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+            <state line="7" column="23" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,17 +147,61 @@
       <file leaf-file-name="DinosaurRepository.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dinosaurs/dal/DinosaurRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="25" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+            <state line="7" column="44" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Console.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dinosaurs/io/Console.java">
+      <file leaf-file-name="InMemoryDinosaurRepository.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dinosaurs/dal/InMemoryDinosaurRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="23" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
+            <state line="21" column="19" selection-start="523" selection-end="523" vertical-scroll-proportion="0.4883721">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InMemoryDinosaurRepositoryTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/dinosaurs/dal/InMemoryDinosaurRepositoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddDinosaurCommandTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/dinosaurs/command/AddDinosaurCommandTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="157" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DinosaurFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dinosaurs/factory/DinosaurFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="36" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DinosaurFactoryTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/dinosaurs/factory/DinosaurFactoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="44" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,29 +224,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/model/Dinosaur.java" />
-        <option value="$PROJECT_DIR$/src/dal/DinosaurRepository.java" />
-        <option value="$PROJECT_DIR$/src/Console.java" />
-        <option value="$PROJECT_DIR$/src/command/ListDinosaursCommand.java" />
-        <option value="$PROJECT_DIR$/test/command/ListDinosaursCommandTest.java" />
-        <option value="$PROJECT_DIR$/test/MenuTest.java" />
-        <option value="$PROJECT_DIR$/src/dinosaurs/Console.java" />
         <option value="$PROJECT_DIR$/src/dinosaurs/io/Console.java" />
         <option value="$PROJECT_DIR$/test/dinosaurs/io/ConsoleTest.java" />
         <option value="$PROJECT_DIR$/test/dinosaurs/command/ListDinosaursCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/dinosaurs/dal/DinosaurRepository.java" />
-        <option value="$PROJECT_DIR$/test/dinosaurs/command/SearchDinosaurCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/dinosaurs/command/AddDinosaurCommand.java" />
-        <option value="$PROJECT_DIR$/test/dinosaurs/command/AddDinosaurCommandTest.java" />
         <option value="$PROJECT_DIR$/src/dinosaurs/command/ListDinosaursCommand.java" />
+        <option value="$PROJECT_DIR$/test/dinosaurs/command/SearchDinosaurCommandTest.java" />
         <option value="$PROJECT_DIR$/src/dinosaurs/command/SearchDinosaurCommand.java" />
+        <option value="$PROJECT_DIR$/test/dinosaurs/command/RemoveDinosaurCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/dinosaurs/command/RemoveDinosaurCommand.java" />
+        <option value="$PROJECT_DIR$/test/dinosaurs/command/AddDinosaurCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/dinosaurs/command/AddDinosaurCommand.java" />
+        <option value="$PROJECT_DIR$/src/dinosaurs/model/Dinosaur.java" />
+        <option value="$PROJECT_DIR$/test/dinosaurs/factory/DinosaurFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/dinosaurs/factory/DinosaurFactory.java" />
+        <option value="$PROJECT_DIR$/src/dinosaurs/dal/DinosaurRepository.java" />
+        <option value="$PROJECT_DIR$/test/dinosaurs/dal/InMemoryDinosaurRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/dinosaurs/dal/InMemoryDinosaurRepository.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1366" />
-    <option name="height" value="742" />
+    <option name="width" value="1920" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -389,6 +411,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="factory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dinosuar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dinosaurs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dinosuar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dinosaurs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="command" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -473,6 +539,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="factory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dinosuar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dinosaurs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -521,7 +609,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
@@ -546,14 +634,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="dinosaurs.io" />
+      <recent name="dinosaurs.dal" />
+      <recent name="dinosaurs.factory" />
       <recent name="dinosaurs.command" />
+      <recent name="dinosaurs.io" />
       <recent name="option_command" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="dinosaurs.factory" />
       <recent name="dinosaurs.command" />
       <recent name="model" />
       <recent name="dal" />
@@ -837,7 +928,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1366" height="742" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -848,13 +939,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26742426" sideWeight="0.6157556" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38424438" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18836713" sideWeight="0.74518204" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.254818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -927,80 +1019,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="504" selection-end="504" vertical-scroll-proportion="-7.2" />
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/dinosaurs/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dinosaurs/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="31" selection-start="534" selection-end="537" vertical-scroll-proportion="0.82100236">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/dinosaurs/io/ConsoleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="313" selection-end="669" vertical-scroll-proportion="1.0859189">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dinosaurs/io/Console.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="23" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dinosaurs/model/Dinosaur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dinosaurs/dal/DinosaurRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/AbstractList.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="0" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/dinosaurs/command/SearchDinosaurCommandTest.java">
+    <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/ListDinosaursCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="95" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="17" column="4" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dinosaurs/io/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,9 +1047,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/dinosaurs/command/AddDinosaurCommandTest.java">
+    <entry file="file://$PROJECT_DIR$/test/dinosaurs/command/SearchDinosaurCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
+        <state line="22" column="13" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dinosaurs/command/RemoveDinosaurCommandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="36" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/SearchDinosaurCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/RemoveDinosaurCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="53" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1024,22 +1083,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/AddDinosaurCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+        <state line="22" column="29" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dinosaurs/command/AddDinosaurCommandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="157" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dinosaurs/model/Dinosaur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/ListDinosaursCommand.java">
+    <entry file="file://$PROJECT_DIR$/test/dinosaurs/factory/DinosaurFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+        <state line="11" column="44" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dinosaurs/factory/DinosaurFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="36" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dinosaurs/command/SearchDinosaurCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/dinosaurs/dal/DinosaurRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="39" selection-start="471" selection-end="471" vertical-scroll-proportion="0.30097088">
+        <state line="7" column="44" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dinosaurs/dal/InMemoryDinosaurRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dinosaurs/dal/InMemoryDinosaurRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="19" selection-start="523" selection-end="523" vertical-scroll-proportion="0.4883721">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1120,7 +1224,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>junit-4.11</last-edited>
+          <last-edited>com.google.guava:guava:15.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

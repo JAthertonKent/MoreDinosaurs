@@ -4,12 +4,12 @@ import dinosaurs.model.Dinosaur;
 
 import java.util.List;
 
-public class DinosaurRepository {
-    public List<Dinosaur> getAllDinosaurs() {
-        return null;
-    }
+public interface DinosaurRepository {
+    public List<Dinosaur> getAllDinosaurs();
 
-    public List<Dinosaur> searchDinosaurByName(String dino) {
-        return null;
-    }
+    public List<Dinosaur> searchDinosaurByName(String dino);
+
+    public void addDinosaur(Dinosaur dino);
+
+    public void removeDinosaurByName(String dinoName);
 }

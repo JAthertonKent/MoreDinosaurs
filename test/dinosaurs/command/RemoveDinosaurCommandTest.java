@@ -1,21 +1,22 @@
 package dinosaurs.command;
 
 import dinosaurs.dal.DinosaurRepository;
-import dinosaurs.factory.DinosaurFactory;
 import dinosaurs.io.Console;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class AddDinosaurCommandTest {
+public class RemoveDinosaurCommandTest {
+
+    public static final String DINO_NAME = "T-Rex";
 
     @Mock
     private Console console;
@@ -23,19 +24,17 @@ public class AddDinosaurCommandTest {
     private DinosaurRepository dinoRepo;
 
     @InjectMocks
-    private AddDinosaurCommand underTest;
+    RemoveDinosaurCommand underTest;
 
     @Test
     public void shouldDisplayName() {
-        assertEquals(underTest.getName(), "Add Dinosaur");
+        assertEquals(underTest.getName(), "Remove Dinosaur");
     }
 
     @Test
-    public void shouldAddADinosaur() {
-        String dinoName = "Triceratops";
-        when(console.prompt(anyString())).thenReturn(dinoName);
+    public void shouldRemoveDinosaurByName() {
+        Mockito.when(console.prompt(anyString())).thenReturn(DINO_NAME);
         underTest.execute();
-        verify(dinoRepo).addDinosaur(DinosaurFactory.create(dinoName));
+        verify(dinoRepo).removeDinosaurByName(DINO_NAME);
     }
-
 }

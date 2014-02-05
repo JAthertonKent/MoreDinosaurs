@@ -23,8 +23,8 @@ import static org.mockito.Mockito.when;
 public class SearchDinosaurCommandTest {
 
     private static final String DINO_NAME = "Velociraptor";
-    private static final Dinosaur DINO_1 = new Dinosaur();
-    private static final Dinosaur DINO_2 = new Dinosaur();
+    private static final Dinosaur DINO_1 = new Dinosaur(DINO_NAME);
+    private static final Dinosaur DINO_2 = new Dinosaur(DINO_NAME);
 
     @Mock
     private Console console;
