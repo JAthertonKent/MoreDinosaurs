@@ -30,7 +30,7 @@ public class ListDinosaursCommandTest {
 
     @Before
     public void setup() {
-        underTest = new ListDinosaursCommand(dinoRepo, console);
+        underTest = new ListDinosaursCommand(console, dinoRepo);
     }
 
     @Test

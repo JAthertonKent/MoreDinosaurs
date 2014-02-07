@@ -1,7 +1,9 @@
 package dinosaurs.dal;
 
+import com.google.common.collect.Maps;
 import dinosaurs.model.Dinosaur;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -9,25 +11,44 @@ import static com.google.common.collect.Lists.newArrayList;
 
 public class InMemoryDinosaurRepository implements DinosaurRepository {
 
-    private final Map<String, Dinosaur> dinosaurMap;
+    private final Map<String, List<Dinosaur>> dinosaurMap;
 
-    public InMemoryDinosaurRepository(Map<String, Dinosaur> dinoMap) {
+    public InMemoryDinosaurRepository(Map<String, List<Dinosaur>> dinoMap) {
         this.dinosaurMap = dinoMap;
+    }
+
+    public InMemoryDinosaurRepository() {
+        dinosaurMap = Maps.newHashMap();
     }
 
     @Override
     public List<Dinosaur> getAllDinosaurs() {
-        return newArrayList(dinosaurMap.values());
+        final List<Dinosaur> allDinos = newArrayList();
+        final Iterator<List<Dinosaur>> it = dinosaurMap.values().iterator();
+        while (it.hasNext()) {
+            List<Dinosaur> list = it.next();
+            allDinos.addAll(list);
+        }
+        return allDinos;
     }
 
     @Override
     public List<Dinosaur> searchDinosaurByName(String dino) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        if (dinosaurMap.containsKey(dino)) {
+            return dinosaurMap.get(dino);
+        } else {
+            return newArrayList();
+        }
     }
 
     @Override
     public void addDinosaur(Dinosaur dino) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        final String key = dino.getName();
+        if (dinosaurMap.containsKey(key)) {
+            dinosaurMap.get(key).add(dino);
+        } else {
+            dinosaurMap.put(key, newArrayList(dino));
+        }
     }
 
     @Override

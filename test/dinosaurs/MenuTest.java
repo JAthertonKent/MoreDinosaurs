@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import static java.util.Arrays.asList;
@@ -40,28 +41,28 @@ public class MenuTest {
 
     @Test
     public void shouldDisplayWelcomeMessage() {
-        menu.display();
+        menu.displayOptions();
         verify(console, atLeastOnce()).print(anyString());
     }
 
     @Test
     public void shouldDisplayMenuOptions() {
-        menu.display();
-        verify(console).print(OPTION_ONE);
-        verify(console).print(OPTION_TWO);
-        verify(console).print(OPTION_THREE);
+        menu.displayOptions();
+        verify(console).print(Mockito.matches(".*"+OPTION_ONE+".*"));
+        verify(console).print(Mockito.matches(".*"+OPTION_TWO+".*"));
+        verify(console).print(Mockito.matches(".*"+OPTION_THREE+".*"));
     }
 
     @Test
     public void shouldAskForUserInputAndReturnAnOptionIndex() {
         when(console.ask()).thenReturn(3);
-        assertEquals(menu.prompt(), 2);
+        assertEquals(menu.promptForOptionNumber(), 2);
     }
 
     @Test
     public void shouldAskAgainForInputIfInputIsOutOfBounds() {
         when(console.ask()).thenReturn(4, -1, 2);
-        assertEquals(menu.prompt(), 1);
+        assertEquals(menu.promptForOptionNumber(), 1);
         verify(console, times(3)).ask();
     }
 

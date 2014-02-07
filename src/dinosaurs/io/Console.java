@@ -2,6 +2,7 @@ package dinosaurs.io;
 
 import java.io.InputStream;
 import java.io.PrintStream;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Console {
@@ -19,7 +20,19 @@ public class Console {
     }
 
     public int ask() {
-        return in.nextInt();
+        int i = -1;
+        boolean isValid = false;
+        while (!isValid) {
+            try {
+                i = in.nextInt();
+                in.nextLine();
+                isValid = true;
+            } catch (InputMismatchException e) {
+                print("Please enter a number.");
+                in.next();
+            }
+        }
+        return i;
     }
 
     public String prompt(String s) {

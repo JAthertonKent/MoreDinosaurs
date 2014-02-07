@@ -66,7 +66,7 @@ public class SearchDinosaurCommandTest {
     public void shouldReturnMessageIfDinoNotFound() {
         when(dinoRepo.searchDinosaurByName(DINO_NAME)).thenReturn(new ArrayList<Dinosaur>());
         underTest.execute();
-        verify(console).print("Sorry no dinosaur found by name " + DINO_NAME);
+        verify(console).print("Sorry no dinosaur found by name \"" + DINO_NAME + "\"");
     }
 
     @Test

@@ -11,19 +11,22 @@ public class Menu {
     private Console console;
     private List<Command> options;
 
-    public void display() {
-        console.print("Please choose from the following options:");
+    public void displayOptions() {
+        //console.print("Please choose from the following options:");
 
+        int index = 1;
         for (Command command: options) {
-            console.print(command.getName());
+            console.print(index++ + ". " + command.getName());
         }
     }
 
-    public int prompt() {
+    public int promptForOptionNumber() {
         int input;
-        do {
+        input = console.ask();
+        while(isInvalidOption(input)){
+            console.print("Index out of bounds.");
             input = console.ask();
-        } while (isInvalidOption(input));
+        }
         return input - 1;
     }
 

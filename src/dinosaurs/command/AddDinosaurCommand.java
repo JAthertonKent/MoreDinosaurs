@@ -3,7 +3,6 @@ package dinosaurs.command;
 import dinosaurs.dal.DinosaurRepository;
 import dinosaurs.factory.DinosaurFactory;
 import dinosaurs.io.Console;
-import dinosaurs.model.Dinosaur;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
@@ -21,5 +20,6 @@ public class AddDinosaurCommand implements Command {
     public void execute() {
         String input = console.prompt("Enter the name of your dinosaur:");
         dinoRepo.addDinosaur(DinosaurFactory.create(input));
+        console.print("You have created a dinosaur named \"" + input + "\"");
     }
 }

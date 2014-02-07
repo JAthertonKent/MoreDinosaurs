@@ -23,8 +23,9 @@ public class SearchDinosaurCommand implements Command {
         final String query = console.prompt("Please type the name of the dinosaur you would like: ");
         final List<Dinosaur> dinoList = dinosaurRepository.searchDinosaurByName(query);
         final String message;
+
         if (dinoList.isEmpty()) {
-            message = "Sorry no dinosaur found by name " + query;
+            message = "Sorry no dinosaur found by name \"" + query + "\"";
         } else {
             message = StringUtils.join(dinoList, ", ");
         }

@@ -12,8 +12,8 @@ import java.util.List;
 @AllArgsConstructor
 public class ListDinosaursCommand implements Command {
 
-    private final DinosaurRepository dinosaurRepository;
     private final Console console;
+    private final DinosaurRepository dinosaurRepository;
 
     @Getter
     private final String name = "List Dinosaurs";
